@@ -79,10 +79,4 @@ function initializeMobileMenu() {
 }
 
 // Load includes when DOM is ready
-document.addEventListener('DOMContentLoaded', async function() {
-    await loadIncludes();
-    
-    // Remove loading class and show content
-    document.body.classList.remove('loading');
-    document.body.classList.add('content-loaded');
-});
+document.addEventListener('DOMContentLoaded', loadIncludes);
