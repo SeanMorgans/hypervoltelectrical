@@ -1,0 +1,336 @@
+<div data-include="header"></div>
+<script>
+    // Set page-specific meta data
+    document.addEventListener('DOMContentLoaded', function() {
+        document.title = 'Contact Hypervolt Electrical | Get Free Quote | Professional Electrician Cardiff';
+        
+        // Update meta description
+        let metaDesc = document.querySelector('meta[name="description"]');
+        if (!metaDesc) {
+            metaDesc = document.createElement('meta');
+            metaDesc.name = 'description';
+            document.head.appendChild(metaDesc);
+        }
+        metaDesc.content = 'Contact Hypervolt Electrical for professional electrical services in South Wales. Call 01445 555504 for free quotes, electrical services, or use our online contact form. Fast response guaranteed.';
+        
+        // Update meta keywords
+        let metaKeywords = document.querySelector('meta[name="keywords"]');
+        if (!metaKeywords) {
+            metaKeywords = document.createElement('meta');
+            metaKeywords.name = 'keywords';
+            document.head.appendChild(metaKeywords);
+        }
+        metaKeywords.content = 'contact electrician cardiff, electrical quote request, hypervolt electrical contact, electrician south wales contact';
+    });
+</script>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p class="subtitle">Ready to start your electrical project? Contact us today for a free consultation and quote. Our friendly team is standing by to help with all your electrical needs.</p>
+            </div>
+        </section>
+
+        <!-- Professional Service Banner -->
+        <div class="container">
+            <div class="emergency-section">
+                <h2 class="emergency-title">📞 Need Professional Electrical Service?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 1rem;">Professional electrical work requires expert attention. Our qualified electricians are ready to help with your electrical needs.</p>
+                <a href="tel:01445 555504" class="emergency-phone">01445 555504</a>
+                <p>⚡ Fast response • 🛡️ Safety first • 💯 Professional service</p>
+            </div>
+        </div>
+
+        <!-- Contact Methods Section -->
+        <section class="contact-methods">
+            <div class="container">
+                <h2>How to Reach Us</h2>
+                <p class="section-subtitle">Multiple ways to get in touch - choose what works best for you</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div class="contact-details">
+                            <h4>Call Us Now</h4>
+                            <a href="tel:01445 555504" style="font-size: 1.3rem; font-weight: bold;">01445 555504</a>
+                            <p>🕒 Mon-Fri: 8AM-6PM<br>
+                               🕒 Sat: 9AM-4PM<br>
+                               📞 Professional Service</p>
+                            <p style="margin-top: 1rem;"><strong>Average response time:</strong> Under 30 minutes for emergencies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <a href="mailto:office@hypervoltelectrical.co.uk" style="font-size: 1.1rem;">office@hypervoltelectrical.co.uk</a>
+                            <p>📧 General enquiries & quotes<br>
+                               📋 Project consultations<br>
+                               💼 Commercial enquiries</p>
+                            <p style="margin-top: 1rem;"><strong>Response time:</strong> Within 2 hours during business hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-icon">💬</span>
+                        <div class="contact-details">
+                            <h4>Online Contact Form</h4>
+                            <p>Use our detailed contact form below for comprehensive project quotes and enquiries.</p>
+                            <p>✓ Detailed project information<br>
+                               ✓ File uploads for plans<br>
+                               ✓ Service type selection</p>
+                            <p style="margin-top: 1rem;"><strong>Best for:</strong> Detailed quotes and project planning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Contact Section -->
+        <section class="main-contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h3 style="margin-bottom: 2rem; color: #9c7945; text-align: center;">Request Your Free Quote</h3>
+                        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html" id="contactForm">
+                            <!-- Honeypot field for spam protection -->
+                            <div style="display: none;">
+                                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="01445 555504">
+                                </div>
+                            </div>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group">
+                                    <label for="service">Service Required</label>
+                                    <select id="service" name="service">
+                                        <option value="">Select a service</option>
+                                        <option value="fault-finding">Fault Finding Call Out</option>
+                                        <option value="consumer-unit">Consumer Unit Replacement</option>
+                                        <option value="eicr-testing">Property Electrical Testing (EICR)</option>
+                                        <option value="earthing-bonding">Earthing Bonding</option>
+                                        <option value="bathroom-extractor">Bathroom Extractor Installation</option>
+                                        <option value="cooker-installation">Free Standing Cooker Installation</option>
+                                        <option value="shower-replacement">Electric Shower Replacement</option>
+                                        <option value="light-fittings">Light Fitting Replacements</option>
+                                        <option value="socket-switch">Socket/Switch Replacement</option>
+                                        <option value="smart-thermostat">Wireless/Smart Thermostat Installation</option>
+                                        <option value="outdoor-socket-light">Install Outdoor Socket/Light</option>
+                                        <option value="additional-sockets">Additional Sockets/Lights</option>
+                                        <option value="other">Other Service</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="urgency">Project Urgency</label>
+                                    <select id="urgency" name="urgency">
+                                        <option value="">Select urgency</option>
+                                        <option value="urgent">Urgent (within 2 hours)</option>
+                                        <option value="urgent">Urgent (within 24 hours)</option>
+                                        <option value="this-week">This week</option>
+                                        <option value="this-month">Within this month</option>
+                                        <option value="planning">Planning stage</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="property-type">Property Type</label>
+                                <select id="property-type" name="property-type">
+                                    <option value="">Select property type</option>
+                                    <option value="house">House</option>
+                                    <option value="flat">Flat/Apartment</option>
+                                    <option value="bungalow">Bungalow</option>
+                                    <option value="office">Office</option>
+                                    <option value="shop">Shop/Retail</option>
+                                    <option value="warehouse">Warehouse/Industrial</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Please describe your electrical needs, property details, any specific requirements, and preferred timing for the work..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="consent" name="consent" required style="width: auto;">
+                                    <span>I consent to Hypervolt Electrical contacting me about this enquiry *</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="marketing" name="marketing" style="width: auto;">
+                                    <span>I'd like to receive updates about Hypervolt Electrical services and offers</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="cta-button" style="width: 100%; margin-top: 1rem;">Send Message & Get Free Quote</button>
+                        </form>
+                        
+                        <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: rgba(156, 121, 69, 0.1); border-radius: 10px;">
+                            <p style="font-size: 0.9rem; color: #b8b8b8;">
+                                🔒 Your information is secure and will never be shared. We typically respond within 2 hours during business hours.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div class="contact-details">
+                                <h4>Service Areas</h4>
+                                <p><strong>Primary Service Areas:</strong></p>
+                                <ul style="list-style: none; margin: 0.5rem 0;">
+                                    <li>📍 Cardiff and Greater Cardiff Area</li>
+                                    <li>📍 Newport and Surrounding Communities</li>
+                                    <li>📍 Swansea and West Wales</li>
+                                    <li>📍 Bridgend and Vale of Glamorgan</li>
+                                </ul>
+                                <p style="margin-top: 1rem;"><strong>Coverage:</strong> All of South Wales within 50-mile radius</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">🕒</span>
+                            <div class="contact-details">
+                                <h4>Business Hours</h4>
+                                <div style="display: grid; grid-template-columns: auto 1fr; gap: 1rem; margin: 1rem 0;">
+                                    <span>Monday - Friday:</span>
+                                    <span>8:00 AM - 6:00 PM</span>
+                                    <span>Saturday:</span>
+                                    <span>9:00 AM - 4:00 PM</span>
+                                    <span>Sunday:</span>
+                                    <span>By appointment</span>
+                                    <span style="color: #e74c3c;">Professional Service:</span>
+                                    <span style="color: #e74c3c;">Available Daily</span>
+                                </div>
+                                <p style="margin-top: 1rem; color: #9c7945;"><strong>Response Times:</strong> Emergencies within 30 minutes, routine calls within 2 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <div class="contact-details">
+                                <h4>Business Information</h4>
+                                <p><strong>Company:</strong> Hypervolt Electrical Ltd</p>
+                                <p><strong>Registration:</strong> Companies House Registered</p>
+                                <p><strong>Insurance:</strong> £2M Public Liability</p>
+                                <p><strong>Certifications:</strong> Fully Qualified</p>
+                                <p><strong>VAT Registered:</strong> Yes</p>
+                                <p style="margin-top: 1rem; color: #9c7945;">Fully licensed and insured for your peace of mind</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">🌐</span>
+                            <div class="contact-details">
+                                <h4>Follow Us Online</h4>
+                                <p>Stay connected for electrical safety tips, project updates, and special offers:</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                                    <a href="#" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(156, 121, 69, 0.2); border-radius: 20px; text-decoration: none; color: #9c7945;">
+                                        📘 Facebook
+                                    </a>
+                                    <a href="#" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(156, 121, 69, 0.2); border-radius: 20px; text-decoration: none; color: #9c7945;">
+                                        📷 Instagram
+                                    </a>
+                                    <a href="#" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(156, 121, 69, 0.2); border-radius: 20px; text-decoration: none; color: #9c7945;">
+                                        💼 LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Our Service Area</h2>
+                <p class="section-subtitle">We proudly serve all of South Wales with fast, reliable electrical services</p>
+                
+                <div class="map-placeholder" style="height: 400px; margin-top: 3rem;">
+                    🗺️ Interactive Service Area Map<br>
+                    <div style="font-size: 1rem; margin-top: 1rem; line-height: 1.6;">
+                        <strong>Covering:</strong> Cardiff • Newport • Swansea • Bridgend • Vale of Glamorgan<br>
+                        Pontypool • Cwmbran • Caerphilly • Rhondda Valley • Merthyr Tydfil<br>
+                        <em>Full service coverage within 50-mile radius of Cardiff</em>
+                    </div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div style="text-align: center; padding: 2rem; background: rgba(156, 121, 69, 0.1); border-radius: 15px;">
+                        <h4 style="color: #9c7945; margin-bottom: 1rem;">Cardiff Area</h4>
+                        <p>Central Cardiff, Cardiff Bay, Penarth, Whitchurch, Llanishen, Rhiwbina</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: rgba(156, 121, 69, 0.1); border-radius: 15px;">
+                        <h4 style="color: #9c7945; margin-bottom: 1rem;">Newport Area</h4>
+                        <p>Newport city, Cwmbran, Pontypool, Caldicot, Chepstow, Monmouth</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: rgba(156, 121, 69, 0.1); border-radius: 15px;">
+                        <h4 style="color: #9c7945; margin-bottom: 1rem;">Swansea Area</h4>
+                        <p>Swansea city, Neath, Port Talbot, Mumbles, Gower Peninsula</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: rgba(156, 121, 69, 0.1); border-radius: 15px;">
+                        <h4 style="color: #9c7945; margin-bottom: 1rem;">Valley Areas</h4>
+                        <p>Rhondda Valley, Cynon Valley, Merthyr Tydfil, Aberdare, Pontypridd</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions about our services and contact process</p>
+                
+                <div style="display: grid; gap: 2rem; margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <div style="background: rgba(156, 121, 69, 0.1); padding: 2rem; border-radius: 15px; border: 1px solid rgba(156, 121, 69, 0.3);">
+                        <h4 style="color: #9c7945; margin-bottom: 1rem;">❓ How quickly can you provide a quote?</h4>
+                        <p>We aim to provide quotes within 2 hours during business hours. For complex projects, we may arrange a site visit within 24 hours. Urgent quotes are provided promptly over the phone.</p>
+                    </div>
+                    
+                    <div style="background: rgba(156, 121, 69, 0.1); padding: 2rem; border-radius: 15px; border: 1px solid rgba(156, 121, 69, 0.3);">
+                        <h4 style="color: #9c7945; margin-bottom: 1rem;">❓ Do you charge for quotes and consultations?</h4>
+                        <p>All quotes and initial consultations are completely free. We only charge if you proceed with the work. Standard call-out fees may apply which are deducted from the total if you proceed with repairs.</p>
+                    </div>
+                    
+                    <div style="background: rgba(156, 121, 69, 0.1); padding: 2rem; border-radius: 15px; border: 1px solid rgba(156, 121, 69, 0.3);">
+                        <h4 style="color: #9c7945; margin-bottom: 1rem;">❓ What information do you need for an accurate quote?</h4>
+                        <p>The more details you provide, the more accurate our quote. Include property type, age, specific electrical needs, access requirements, and timeline. Photos can be very helpful for initial assessments.</p>
+                    </div>
+                    
+                    <div style="background: rgba(156, 121, 69, 0.1); padding: 2rem; border-radius: 15px; border: 1px solid rgba(156, 121, 69, 0.3);">
+                        <h4 style="color: #9c7945; margin-bottom: 1rem;">❓ How far do you travel for jobs?</h4>
+                        <p>We cover all of South Wales within a 50-mile radius of Cardiff. This includes Cardiff, Newport, Swansea, and all surrounding areas. No additional travel charges within our standard service area.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<div data-include="footer"></div>
+<script src="js/includes.js"></script>
+<script src="js/contact-form.js"></script>

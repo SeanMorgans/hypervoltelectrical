@@ -1,0 +1,55 @@
+<div data-include="header"></div>
+<script>
+    // Set page-specific meta data
+    document.addEventListener('DOMContentLoaded', function() {
+        document.title = 'Thank You - Hypervolt Electrical | Message Received';
+        
+        // Update meta description
+        let metaDesc = document.querySelector('meta[name="description"]');
+        if (!metaDesc) {
+            metaDesc = document.createElement('meta');
+            metaDesc.name = 'description';
+            document.head.appendChild(metaDesc);
+        }
+        metaDesc.content = 'Thank you for contacting Hypervolt Electrical. We have received your message and will respond within 2 hours during business hours.';
+    });
+</script>
+
+<!-- Main Content -->
+<main style="padding-top: 120px; min-height: 80vh;">
+    <!-- Thank You Section -->
+    <section style="padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div style="font-size: 4rem; margin-bottom: 2rem;">✅</div>
+                <h1 style="color: #9c7945; margin-bottom: 1.5rem;">Thank You!</h1>
+                <h2 style="color: #b8b8b8; font-weight: normal; margin-bottom: 2rem;">Your message has been received</h2>
+                
+                <div style="background: rgba(156, 121, 69, 0.1); padding: 2rem; border-radius: 15px; border: 1px solid rgba(156, 121, 69, 0.3); margin-bottom: 3rem;">
+                    <h3 style="color: #9c7945; margin-bottom: 1rem;">What happens next?</h3>
+                    <div style="text-align: left; max-width: 400px; margin: 0 auto;">
+                        <p style="margin-bottom: 1rem;">📧 <strong>We'll review your enquiry</strong> and prepare a detailed response</p>
+                        <p style="margin-bottom: 1rem;">⏰ <strong>Response within 2 hours</strong> during business hours (Mon-Fri 8AM-6PM)</p>
+                        <p style="margin-bottom: 1rem;">📞 <strong>If urgent</strong>, call us directly at 01445 555504</p>
+                        <p>💼 <strong>Free quotes</strong> for all electrical services</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+                    <a href="index.html" class="cta-button">Back to Home</a>
+                    <a href="pricing.html" class="cta-button cta-secondary">View Our Services</a>
+                </div>
+                
+                <div style="background: rgba(156, 121, 69, 0.05); padding: 1.5rem; border-radius: 10px;">
+                    <h4 style="color: #9c7945; margin-bottom: 1rem;">Need immediate assistance?</h4>
+                    <p style="margin-bottom: 1rem;">For urgent electrical issues, don't hesitate to call us directly:</p>
+                    <a href="tel:01445555504" style="font-size: 1.5rem; font-weight: bold; color: #9c7945; text-decoration: none;">📞 01445 555504</a>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #8c8c8c;">Mon-Fri: 8AM-6PM | Sat: 9AM-4PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div data-include="footer"></div>
+<script src="js/includes.js"></script>
