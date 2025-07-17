@@ -16,7 +16,7 @@
 </script>
 
 <!-- Main Content -->
-<main style="padding-top: 120px; min-height: 80vh;">
+<main style="padding-top: 120px; min-height: 80vh; opacity: 0; transition: opacity 0.3s ease;" id="mainContent">
     <!-- Thank You Section -->
     <section style="padding: 4rem 0; text-align: center;">
         <div class="container">
@@ -53,3 +53,15 @@
 
 <div data-include="footer"></div>
 <script src="js/includes.js"></script>
+<script>
+// Show content after includes load
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait a bit for includes to load, then show content
+    setTimeout(() => {
+        const mainContent = document.getElementById('mainContent');
+        if (mainContent) {
+            mainContent.style.opacity = '1';
+        }
+    }, 300);
+});
+</script>
