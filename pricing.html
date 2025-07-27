@@ -48,7 +48,7 @@
         <!-- Pricing Philosophy Section -->
         <section class="pricing-philosophy">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
+                <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
                     <div>
                         <h2>Our Pricing Philosophy</h2>
                         <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">At Hypervolt Electrical, we believe in complete transparency. Our prices are competitive, fair, and always include quality materials and professional workmanship.</p>
@@ -67,12 +67,24 @@
                         </div>
                     </div>
                     
-                    <div style="display: flex; justify-content: center;">
-                        <div style="width: 300px; height: 300px; background: linear-gradient(135deg, rgba(156, 121, 69, 0.2) 0%, rgba(156, 121, 69, 0.1) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: #9c7945; border: 3px solid rgba(156, 121, 69, 0.4);">
+                    <div style="display: flex; justify-content: center; margin-top: 2rem;">
+                        <div style="width: min(250px, 80vw); height: min(250px, 80vw); max-width: 300px; max-height: 300px; background: linear-gradient(135deg, rgba(156, 121, 69, 0.2) 0%, rgba(156, 121, 69, 0.1) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: clamp(2.5rem, 8vw, 4rem); color: #9c7945; border: 3px solid rgba(156, 121, 69, 0.4);">
                             💰
                         </div>
                     </div>
                 </div>
+                
+                <style>
+                @media (min-width: 768px) {
+                    .pricing-philosophy .container > div {
+                        grid-template-columns: 1fr 1fr !important;
+                        gap: 4rem !important;
+                    }
+                    .pricing-philosophy .container > div > div:last-child {
+                        margin-top: 0 !important;
+                    }
+                }
+                </style>
             </div>
         </section>
 
